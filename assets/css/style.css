@@ -1,0 +1,778 @@
+/* Yekan Bakh */
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../fonts/YekanBakh-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../fonts/YekanBakh-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inter (Latin) */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Azonix (برای تیتر/لوگو و ...) */
+@font-face {
+    font-family: 'Azonix';
+    src: url('../fonts/AzonixRegular.woff2') format('woff2');
+    font-weight: 400; /* این فونت معمولاً یک وزن دارد */
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* پیش‌فرض: لاتین */
+html {
+    margin: 0 !important;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* فارسی و عربی */
+:lang(fa), :lang(ar) {
+    font-family: 'YekanBakh', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* بولد عمومی */
+strong, b, .fw-bold {
+    font-weight: 700;
+}
+
+
+/*armin root css*/
+:root {
+    --main: #062B2B;
+    --second: #F9B625;
+    --bg: #0B4C4C;
+    --text: #11162E;
+}
+
+* {
+    list-style: none;
+}
+
+.c-main {
+    color: var(--main);
+}
+
+.c-second {
+    color: var(--second);
+}
+
+.c-text {
+    color: var(--text);
+}
+
+.bg-main {
+    background: var(--main);
+}
+
+.bg-second {
+    background: var(--second);
+}
+
+.bg-bg {
+    background: var(--bg);
+
+}
+
+body {
+    font-family: "HelveticaNeue";
+    font-size: 0.8rem;
+    color: #11162E;
+    line-height: 2;
+
+}
+
+img {
+    height: auto !important;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    color: unset;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+.fs-8 {
+    font-size: 0.5rem;
+}
+
+.fs-9 {
+    font-size: 0.5625rem;
+}
+
+.fs-10 {
+    font-size: 0.625rem;
+}
+
+.fs-11 {
+    font-size: 0.6875rem;
+}
+
+.fs-12 {
+    font-size: 0.75rem;
+}
+
+.fs-13 {
+    font-size: 0.8125rem;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.fs-15 {
+    font-size: 0.9375rem;
+}
+
+.fs-16 {
+    font-size: 1rem;
+}
+
+.fs-17 {
+    font-size: 1.0625rem;
+}
+
+.fs-18 {
+    font-size: 1.125rem;
+}
+
+.fs-19 {
+    font-size: 1.1875rem;
+}
+
+.fs-20 {
+    font-size: 1.25rem;
+}
+
+.fs-21 {
+    font-size: 1.3125rem;
+}
+
+.fs-22 {
+    font-size: 1.375rem;
+}
+
+.fs-23 {
+    font-size: 1.4375rem;
+}
+
+.fs-24 {
+    font-size: 1.5rem;
+}
+
+.fs-25 {
+    font-size: 1.5625rem;
+}
+
+.fs-26 {
+    font-size: 1.625rem;
+}
+
+.fs-27 {
+    font-size: 1.6875rem;
+}
+
+.fs-28 {
+    font-size: 1.75rem;
+}
+
+.fs-29 {
+    font-size: 1.8125rem;
+}
+
+.fs-30 {
+    font-size: 1.875rem;
+}
+
+.fs-31 {
+    font-size: 1.9375rem;
+}
+
+.fs-32 {
+    font-size: 2rem;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.oneline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -moz-line-clamp: 1;
+    -ms-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}
+
+
+.azonix {
+    font-family: 'Azonix', 'Inter', sans-serif;
+
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.second-button {
+    line-height: 2;
+    display: inline-flex; /* برای کنترل فلش داخل */
+    align-items: center;
+    gap: 0.5rem; /* فاصله بین متن و فلش */
+    padding: 0.5rem 1rem;
+    background: var(--second);
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: #11162E;
+}
+
+.second-button img {
+    transition: transform 0.3s ease;
+}
+
+.second-button:hover {
+    background: #e2a21e; /* یه تُن تیره‌تر هم‌خانواده */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.second-button:hover img {
+    transform: translateX(-4px); /* فلش کمی به سمت چپ حرکت کنه */
+}
+
+.main-button {
+    line-height: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: var(--bg);
+    color: #fff;
+}
+
+.main-button img {
+    transition: transform 0.3s ease;
+}
+
+.main-button:hover {
+    background: #0e5f5f; /* کمی روشن‌تر و جذاب‌تر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.main-button:hover img {
+    transform: translateX(-4px); /* فلش به سمت راست حرکت کنه */
+}
+
+
+.home header#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 1rem 0;
+}
+
+#main-menu .menu-item a {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    color: white !important;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+#main-menu .menu-item a.active {
+    color: var(--second) !important;
+}
+
+
+.dropdown-toggle::after {
+    display: block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "\002B";
+    border-top: unset !important;
+    border-right: unset !important;
+    border-bottom: 0;
+    border-left: unset !important;
+    float: right;
+    margin-right: 0.5rem;
+}
+
+#main-menu li.dropdown:hover ul > .dropdown.nav-item {
+    display: block;
+}
+
+#main-menu li.dropdown:hover > ul {
+    display: block;
+    position: absolute;
+    text-align: right;
+}
+
+a.nav-link.dropdown-toggle.show::after {
+    content: "\002D";
+}
+
+#main-menu li.dropdown:hover ul.depth_0 {
+    display: block;
+    position: absolute;
+    text-align: right;
+    padding: 0 !important;
+    top: 90%;
+    border-radius: 0.25rem;
+    background: #f7f7f7;
+    border: 1px solid var(--main);
+}
+
+ul.depth_1 {
+    right: 95%;
+    top: 50%;
+}
+
+
+/* بهبود تجربه هاور در دسکتاپ */
+@media (min-width: 992px) {
+    .navbar .dropdown-menu.show {
+        display: block; /* تضمین نمایش وقتی JS کلاس show می‌ذاره */
+    }
+}
+
+div#wpadminbar {
+    display: none;
+}
+
+.search-icon-wrapper {
+
+
+    background: var(--main);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav#main-menu-wrapper {
+    background: var(--main);
+    padding: 0.5rem 2rem;
+    border-radius: 4rem;
+}
+
+
+.swiper.main-slider .swiper-slide:after {
+    z-index: 9;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(6, 43, 43, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper.main-slider .swiper-slide .info-box {
+    max-width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    z-index: 99;
+    line-height: 2.5;
+}
+
+.main-slider .slide-controller {
+    z-index: 99;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slide-number {
+    font-size: 20px;
+    color: var(--second);
+    font-family: 'Azonix', 'Inter', sans-serif;
+}
+
+button.ms-next-btn, button.ms-perv-btn {
+    background: unset;
+    border: unset;
+}
+
+.brand-slider {
+    height: 640px;
+    margin: 0;
+}
+
+.brand-logo-wrapper {
+    border-radius: 24px;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: #57575633;
+    align-items: center;
+    justify-content: center;
+}
+
+section.customers:before {
+    z-index: 9;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(6, 43, 43, 1) 100%);
+}
+
+section.customers:after {
+    z-index: 9;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(6, 43, 43, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.product-wrapper {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+img.product-thumb {
+    transition: filter .3s ease, transform .3s ease;
+    will-change: filter, transform;
+}
+
+.product-wrapper:hover img.product-thumb {
+    filter: blur(20px);
+    transform: scale(1.05);
+}
+
+.product-shape, .product-wrapper h3 {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-wrapper h3 {
+    z-index: 99;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+img.product-logo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 9;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease, top .5s ease;
+    will-change: opacity, top;
+}
+
+.product-wrapper:hover img.product-logo {
+    top: 50%;
+    opacity: 1; /* عددی از 0 تا 1 */
+}
+
+.slide-next, .slide-perv {
+    border-radius: 50%;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--bg);
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s ease;
+    will-change: background-color;
+}
+
+.slide-next:hover, .slide-perv:hover {
+    background-color: var(--bg);
+}
+
+.slide-perv svg path, .slide-next svg path {
+    transition: stroke .5s ease;
+    will-change: stroke;
+}
+
+.slide-perv:hover svg path, .slide-next:hover svg path {
+    stroke: white !important;
+}
+
+.counter-wrapper.bg-bg {
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.counter-wrapper .icon-wrapper {
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 9;
+}
+
+.counter-number-wrapper {
+    direction: ltr;
+}
+
+img.counter-shape {
+    position: absolute;
+    top: -1%;
+    width: 60%;
+    z-index: 1;
+}
+
+.promotion .item-wrapper {
+    border-radius: 12px;
+    background: #ffffff12;
+    padding: 0.75rem 1rem;
+}
+
+span.employer {
+    font-size: 16px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    color: var(--second);
+    padding: 0.25rem 0.5rem;
+}
+
+.project-thumb {
+    border-radius: 20px;
+}
+
+img.project-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border-bottom-right-radius: 20px;
+}
+
+
+.projects .slide-next, .projects .slide-perv {
+
+    border: 1px solid var(--second);
+
+}
+
+.projects .slide-next:hover, .projects .slide-perv:hover {
+    background-color: var(--second);
+}
+
+img.about-shape, img.about-logo {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img.about-logo {
+    z-index: 9;
+}
+
+.video-close {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 2;
+    background: var(--second);
+    color: var(--text);
+    border: none;
+    border-radius: .5rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .fsm-8 {
+        font-size: 0.5rem;
+    }
+
+    .fsm-9 {
+        font-size: 0.5625rem;
+    }
+
+    .fsm-10 {
+        font-size: 0.625rem;
+    }
+
+    .fsm-11 {
+        font-size: 0.6875rem;
+    }
+
+    .fsm-12 {
+        font-size: 0.75rem;
+    }
+
+    .fsm-13 {
+        font-size: 0.8125rem;
+    }
+
+    .fsm-14 {
+        font-size: 0.875rem;
+    }
+
+    .fsm-15 {
+        font-size: 0.9375rem;
+    }
+
+    .fsm-16 {
+        font-size: 1rem;
+    }
+
+    .fsm-17 {
+        font-size: 1.0625rem;
+    }
+
+    .fsm-18 {
+        font-size: 1.125rem;
+    }
+
+    .fsm-19 {
+        font-size: 1.1875rem;
+    }
+
+    .fsm-20 {
+        font-size: 1.25rem;
+    }
+
+    .fsm-21 {
+        font-size: 1.3125rem;
+    }
+
+    .fsm-22 {
+        font-size: 1.375rem;
+    }
+
+    .fsm-23 {
+        font-size: 1.4375rem;
+    }
+
+    .fsm-24 {
+        font-size: 1.5rem;
+    }
+
+    .fsm-25 {
+        font-size: 1.5625rem;
+    }
+
+    .fsm-26 {
+        font-size: 1.625rem;
+    }
+
+    .fsm-27 {
+        font-size: 1.6875rem;
+    }
+
+    .fsm-28 {
+        font-size: 1.75rem;
+    }
+
+    .fsm-29 {
+        font-size: 1.8125rem;
+    }
+
+    .fsm-30 {
+        font-size: 1.875rem;
+    }
+
+    .fsm-31 {
+        font-size: 1.9375rem;
+    }
+
+    .fsm-32 {
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aa731554-8179-49a7-8cf5-817e599e9608" name="mehver" url="http://mehver.ewebs.ir">
+        <fileTransfer rootFolder="/public_html/wp-content/themes/tavanmehvar" host="mehver.ewebs.ir" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
